@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-	api.imply(['cljs:compiler']);
+	api.imply(['settinghead:cljs-compiler']);
 	api.addFiles('goog.js', ['server', 'client']);
 	api.addFiles('cljs.core.js', ['server', 'client']);
 	api.export('goog');
